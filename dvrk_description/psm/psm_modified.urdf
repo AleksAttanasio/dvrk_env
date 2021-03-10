@@ -360,7 +360,7 @@
   <joint name="tool_tip" type="fixed">
     <parent link="psm_tool_yaw_link"/>
     <child link="psm_tool_tip_link"/>
-    <origin rpy="0 0 0" xyz="0 0.0102 0"/>
+    <origin rpy="-1.5707 1.5707 0" xyz="0 0.0102 0"/>
   </joint>   
   <!-- fine della modifica -->
   <!-- link 11: pitch_top_link -->
