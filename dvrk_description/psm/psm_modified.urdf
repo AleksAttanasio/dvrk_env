@@ -284,7 +284,7 @@
   </link>
   <!-- joint 8: tool_yaw_joint -->
   <joint name="psm_tool_yaw_joint" type="revolute">
-    <origin rpy="0 -1.5708 3.1416" xyz="0.0091 0 0"/>
+    <origin rpy="1.5708 -1.5708 3.1416" xyz="0.0091 0 0"/>
     <parent link="psm_tool_pitch_link"/>
     <child link="psm_tool_yaw_link"/>
     <axis xyz="0 0 1"/>
@@ -293,12 +293,12 @@
   <!-- link 9: tool_gripper1_link -->
   <link name="psm_tool_gripper1_link">
     <inertial>
-      <origin rpy="1.5708 0 0" xyz="0.00019605 0.001435 -0.00088478"/>
+      <origin rpy="0 0 0" xyz="0.00019605 0.001435 -0.00088478"/>
       <mass value="0"/>
       <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
     </inertial>
     <visual>
-      <origin rpy="1.5708 0 0" xyz="0 0 0"/>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
         <mesh filename="package://dvrk_description/psm/meshes/tool_gripper1_link.STL"/>
       </geometry>
@@ -307,7 +307,7 @@
       </material>
     </visual>
     <collision>
-      <origin rpy="1.5708 0 0" xyz="0 0 0"/>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
         <mesh filename="package://dvrk_description/psm/meshes/tool_gripper1_link.STL"/>
       </geometry>
@@ -325,12 +325,12 @@
   <!-- link 10: tool_gripper2_link -->
   <link name="psm_tool_gripper2_link">
     <inertial>
-      <origin rpy="1.5708 0 0" xyz="-0.00019605 0.001435 0.00088478"/>
+      <origin rpy="0 0 0" xyz="-0.00019605 0.001435 0.00088478"/>
       <mass value="0"/>
       <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
     </inertial>
     <visual>
-      <origin rpy="1.5708 0 0" xyz="0 0 0"/>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
         <mesh filename="package://dvrk_description/psm/meshes/tool_gripper2_link.STL"/>
       </geometry>
@@ -339,7 +339,7 @@
       </material>
     </visual>
     <collision>
-      <origin rpy="1.5708 0 0" xyz="0 0 0"/>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
         <mesh filename="package://dvrk_description/psm/meshes/tool_gripper2_link.STL"/>
       </geometry>
@@ -360,7 +360,7 @@
   <joint name="tool_tip" type="fixed">
     <parent link="psm_tool_yaw_link"/>
     <child link="psm_tool_tip_link"/>
-    <origin rpy="0 0 0" xyz="0 0 0.0102"/>
+    <origin rpy="0 0 0" xyz="0 0.0102 0"/>
   </joint>   
   <!-- fine della modifica -->
   <!-- link 11: pitch_top_link -->
