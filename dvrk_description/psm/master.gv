@@ -30,6 +30,6 @@ node [shape=ellipse, color=blue, fontcolor=blue];
 "psm_tool_gripper1_joint" -> "psm_tool_gripper1_link"
 "psm_tool_yaw_link" -> "psm_tool_gripper2_joint" [label="xyz: 0 0 0 \nrpy: 0 -0 0"]
 "psm_tool_gripper2_joint" -> "psm_tool_gripper2_link"
-"psm_tool_yaw_link" -> "tool_tip" [label="xyz: 0 0.0102 0 \nrpy: -1.57089 -0 0"]
+"psm_tool_yaw_link" -> "tool_tip" [label="xyz: 0 0.0102 0 \nrpy: -1.57089 1.5707 0"]
 "tool_tip" -> "psm_tool_tip_link"
 }
